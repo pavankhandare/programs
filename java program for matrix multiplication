@@ -1,0 +1,44 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package myprograms;
+
+/**
+ *
+ * @author pavan
+ */
+public class matrix_mul {
+    public static void main(String [] args){
+        int firstmatrix [][] = {{1,2,3},{4,5,6},{7,8,9}};
+        int secondmatrix [][] = {{9,8,7},{6,5,4},{3,2,1}};
+        int matrixmul [][] = new int[3][3];
+        int num = 0;
+        for(int i = 0; i < 3; i++){
+            for(int j = 0; j < 3; j++){
+                for(int k = 0; k < 3; k++){
+                    num = num + firstmatrix[i][k] * secondmatrix[k][j];
+                }
+                matrixmul[i][j] = num;
+                num = 0;
+            }
+        }
+        System.out.println("Multiplication of the matrix : ");
+        for(int i = 0; i < 3; i++){
+            for(int j = 0; j < 3; j++){
+                System.out.print(matrixmul[i][j]+"  ");
+            }
+            System.out.println();
+        }
+    }
+}
+/*
+
+Output : 
+Multiplication of the matrix : 
+30  24  18  
+84  69  54  
+138  114  90  
+
+*/
