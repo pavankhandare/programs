@@ -11,9 +11,9 @@ package myprograms;
  */
 public class matrix_mul {
     public static void main(String [] args){
-        int firstmatrix [][] = {{1,2,3},{4,5,6},{7,8,9}};
-        int secondmatrix [][] = {{9,8,7},{6,5,4},{3,2,1}};
-        int matrixmul [][] = new int[3][3];
+        int firstmatrix [][] = {{1,2,3},{4,5,6},{7,8,9}}; // element of first matrix
+        int secondmatrix [][] = {{9,8,7},{6,5,4},{3,2,1}}; // element of second matrix
+        int matrixmul [][] = new int[3][3]; // initialization of new matrix array
         int num = 0;
         for(int i = 0; i < 3; i++){
             for(int j = 0; j < 3; j++){
@@ -24,7 +24,7 @@ public class matrix_mul {
                 num = 0;
             }
         }
-        System.out.println("Multiplication of the matrix : ");
+        System.out.println("Multiplication of the matrix : "); // printing multiplication of matrix
         for(int i = 0; i < 3; i++){
             for(int j = 0; j < 3; j++){
                 System.out.print(matrixmul[i][j]+"  ");
